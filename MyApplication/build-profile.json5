@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/ASUS/.ohos/config/openharmony/default_MyApplication_31hDJaQ1E2iWgTnkEa6-wAcUZONPMtMpzV9HbwwizbA=.cer",
+          "storePassword": "0000001B6531B03C54996585EF49D1D59181AF910B75B83253CBD8EE5019CF23EA9FAAF9D9DE5E974ACD2A",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BD9AA7FC14E7A4647982AFA7996BE451EED77314308DF1CB5CC45947F6CE869D26E822F7D29B203",
+          "profile": "C:/Users/ASUS/.ohos/config/openharmony/default_MyApplication_31hDJaQ1E2iWgTnkEa6-wAcUZONPMtMpzV9HbwwizbA=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/ASUS/.ohos/config/openharmony/default_MyApplication_31hDJaQ1E2iWgTnkEa6-wAcUZONPMtMpzV9HbwwizbA=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
